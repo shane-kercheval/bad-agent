@@ -1,2 +1,8 @@
 # bad-agent
-Coming soon.
+
+Source for [badagent.dev](https://badagent.dev).
+
+```sh
+npm install
+npm run dev
+```
