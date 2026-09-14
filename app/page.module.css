@@ -21,3 +21,43 @@
   opacity: 0.6;
   margin: 0;
 }
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.buttonGhost,
+.buttonPrimary {
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: opacity 120ms ease, background-color 120ms ease;
+}
+
+.buttonGhost {
+  color: var(--foreground);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--foreground) 20%, transparent);
+}
+
+.buttonGhost:hover {
+  background: color-mix(in srgb, var(--foreground) 6%, transparent);
+}
+
+.buttonPrimary {
+  color: var(--background);
+  background: var(--foreground);
+}
+
+.buttonPrimary:hover {
+  opacity: 0.85;
+}
